@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1aa"
+    tools:context=".MainActivity">
+
+    <DatePicker
+        android:visibility="gone"
+        android:id="@+id/date_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Age Calculator"
+        android:textColor="#00f"
+        android:textSize="30dp" />
+    <TextView
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:text="Input your Birthday here: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:maxLength="2"
+            android:inputType="number"
+            android:id="@+id/day_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Day" />
+        <TextView
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+          android:maxLength="2"
+            android:inputType="number"
+            android:id="@+id/month_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Month" />
+
+        <TextView
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLength="4"
+            android:inputType="number"
+            android:id="@+id/year_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Year" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cal_btn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Age: " />
+
+
+</LinearLayout>
